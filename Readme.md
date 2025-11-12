@@ -1,6 +1,7 @@
 # Student Management System - Developer Skill Test
 
-A comprehensive full-stack web application for managing school operations including students, staff, classes, notices, and leave management. This project serves as a skill assessment platform for **Frontend**, **Backend**, and **Blockchain** developers.
+A comprehensive full-stack web application for managing school operations including students, staff, classes, notices, and leave management. 
+This project serves as a skill assessment platform for **Frontend**, **Backend**, and **Blockchain** developers.
 
 ## 🏗️ Project Architecture
 
@@ -91,7 +92,8 @@ psql -d school_mgmt -f seed_db/seed-db.sql
 ```bash
 - Objective: Create a standalone microservice in Go to generate PDF reports for students by consuming the existing Node.js backend API.
 - Location: A new 'go-service/' directory at the root of the project.
-- Description: This service will connect to the existing Node.js backend '/api/v1/students/:id' endpoint to fetch student data, and then use the    returned JSON to generate a downloadable PDF report.
+- Description: This service will connect to the existing Node.js backend '/api/v1/students/:id' endpoint to fetch student data, 
+  and then use the returned JSON to generate a downloadable PDF report.
 - Skills Tested: Golang, REST API consumption, JSON parsing, file generation, microservice integration.
 - Requirements:
   - Create a new endpoint 'GET /api/v1/students/:id/report' in the Go service.
@@ -104,7 +106,8 @@ psql -d school_mgmt -f seed_db/seed-db.sql
 ```bash
 - Objective: Create a multi-container setup to run the entire application stack (Frontend, Backend, Database) using Docker and Docker Compose.
 - Location: `Dockerfile` in the `frontend` and `backend` directories, and a `docker-compose.yml` file at the project root.
-- Description: The goal is to make the entire development environment reproducible and easy to launch with a single command. The candidate must ensure all services can communicate with each other inside the Docker network.
+- Description: The goal is to make the entire development environment reproducible and easy to launch with a single command. 
+  The candidate must ensure all services can communicate with each other inside the Docker network.
 - Skills Tested: Docker, Docker Compose, container networking, database seeding in a container, environment variable management.
 - Requirements:
   - Write a `Dockerfile` for the `frontend` service.
