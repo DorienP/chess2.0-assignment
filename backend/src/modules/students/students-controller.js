@@ -30,7 +30,7 @@ const handleStudentStatus = asyncHandler(async (req, res) => {
     const payload = req.body;
     const { id: userId } = req.params;
     const { id: reviewerId } = req.user;
-    const message = await processReviewStaffStatus({ ...payload, userId, reviewerId });
+    const message = await setStudentStatus({ ...payload, userId, reviewerId });
     res.json(message);
 });
 
